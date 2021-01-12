@@ -44,7 +44,15 @@ The microarchitecture of RVAnt.
 
 ## Documents
 
-You can build the documents on your local machine using sphinx, or read the [online documents]().
+You can build the documents on your local machine using sphinx, 
+
+```
+cd doc
+pip3 install -r requirements.txt
+make html
+```
+
+or read the [online documents]().
 
 ## Versioning
 

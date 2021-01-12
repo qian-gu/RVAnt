@@ -3,7 +3,6 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-
 RVAnt: A minimal RISC-V core for learning purpose
 ==================================================
 
@@ -12,12 +11,12 @@ RVAnt is a minial opensource 32 bit RISC-V CPU core for learning purpose written
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   :hidden:
    :numbered:
 
-   overview/overview
-   core/core
-   soc/soc
-   quick_start/index
+   01_overview/overview.rst
+   02_user/index.rst
+   03_reference/index.rst
    changelog
    license
 
