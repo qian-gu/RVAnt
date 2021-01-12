@@ -1,6 +1,4 @@
-English | [简体中文][zh_cn]
-
-[zh_cn]: 
+English | [简体中文]()
 
 RVAnt :ant:
 ============
@@ -11,11 +9,11 @@ RVAnt is a minimal implementation of RV32I written in SystemVerilog for individu
 
 ## Table of Contents
 
--[Features](#features)
--[Configuration](#configuration)
--[Performance](#performance)
--[Directory Description](#directory-description)
--[Build and Test](#build-and-test)
++ [Features](#features)
++ [Configuration](#configuration)
++ [Performance](#performance)
++ [Directory Description](#directory-description)
++ [Build and Test](#build-and-test)
 
 ## Features
 
@@ -32,7 +30,6 @@ The microarchitecture of RVAnt.
 ## Directory Description
 
 | Module                | Description                                                           |
-
 | --------------------- | --------------------------------------------------------------------- |
 | `rvant`               | The RVAnt CPU                                                         |
 | `rvant_axi`           | The version of the CPU with AXI4-Lite interface                       |
