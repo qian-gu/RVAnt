@@ -1,7 +1,7 @@
 RVAnt User Guide
 ================
 
-RVAnt is a minial opensource 32 bit RISC-V CPU core for learning purpose written in SystemVerilog.
+This guide aims to help hardware developers intergrating RVAnt into their designs.
 
 .. toctree::
     :maxdepth: 2

@@ -6,7 +6,7 @@
 RVAnt: A minimal RISC-V core for learning purpose
 ==================================================
 
-RVAnt is a minial opensource 32 bit RISC-V CPU core for learning purpose written in SystemVerilog.
+RVAnt is a minial 32 bit RISC-V CPU core for learning purpose written in SystemVerilog.
 
 .. toctree::
    :maxdepth: 2
@@ -26,3 +26,5 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+.. todolist::

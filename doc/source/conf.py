@@ -17,11 +17,14 @@
 # -- Project information -----------------------------------------------------
 
 project = 'RVAnt Documentation'
-copyright = '2021, Qian Gu'
+copyright = '2021, Qian Gu, @qian-gu on Github'
 author = 'Qian Gu'
 
 # The full version, including alpha/beta/rc tags
 release = 'v0.1.0'
+
+numfig = True
+numfig_format = {'figure': 'Figure %s', 'table': 'Table %s', 'code-block': 'Listing %s'}
 
 
 # -- General configuration ---------------------------------------------------
@@ -30,8 +33,14 @@ release = 'v0.1.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "sphinx_rtd_theme"
+    "sphinx_rtd_theme",
+    "sphinxcontrib.wavedrom",
+    "sphinx.ext.todo"
 ]
+
+wavedrom_html_jsinline = False
+
+todo_include_todos = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -40,7 +49,6 @@ templates_path = ['_templates']
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
-
 
 # -- Options for HTML output -------------------------------------------------
 
