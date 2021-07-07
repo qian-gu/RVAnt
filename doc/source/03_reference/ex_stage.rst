@@ -1,7 +1,7 @@
-.. _exu:
+.. _ex-stage:
 
-Execution Unit
-===============
+Instruction Execution Stage
+============================
 
 .. _mult-div:
 

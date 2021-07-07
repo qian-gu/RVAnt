@@ -39,6 +39,7 @@ extensions = [
 ]
 
 wavedrom_html_jsinline = False
+render_using_wavedrompy = True
 
 todo_include_todos = True
 

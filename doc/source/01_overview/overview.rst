@@ -10,9 +10,9 @@ Feature
 
 - RV32I[M]_Zicsr_Zifencei
 - M-mode only
-- 2-stage pipeline
-- single issue
-- in-order execution
+- 3-stage pipeline
+- in-order single issue
+- out-of-order execution
 - writen in SystemVerilog
 - MIT license
 

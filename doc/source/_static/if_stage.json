@@ -1,0 +1,10 @@
+{"signal":
+ [
+   {"name": "clk", "wave": "p.....|."},
+   {"name": "rst_n", "wave": "01....|."},
+   {"name": "PC_prev", "wave": "x345x.|.", "data": "PC1 PC2 PC3 PC4"},
+   {"name": "PC", "wave": "x.345x|.", "data": "PC1 PC2 PC3 PC4"},
+   {"name": "IR", "wave": "x.345x|.", "data": "IR1 IR2 IR3 IR4"}
+ ],
+ "head": {"tick":0}
+}

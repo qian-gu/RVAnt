@@ -8,12 +8,11 @@ This guide explains the architecture of RVAnt to help users to understand and cu
     :caption: Architecture Details
 
     pipeline
-    ifu
-    id
-    exu
-    mem
-    wb
+    if_stage
+    id_stage
+    ex_stage
     lsu
-    rf
+    mem_intf
+    mem_subsys
     csr
     soc

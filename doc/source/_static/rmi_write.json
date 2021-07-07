@@ -1,0 +1,20 @@
+{"signal":
+[
+  {"name": "clk", "wave": "p.....|......"},
+  ["Request",
+   {"name": "req_vld", "wave": "01..0.|......"},
+   {"name": "req_rdy", "wave": "0.1.0.|......"},
+   {"name": "req_wr", "wave": "0.1.0.|......"},
+   {"name": "req_addr", "wave": "x3.4x.|......", "data": "A1 A2"},
+   {"name": "req_wdat", "wave": "x3.4x.|......", "data": "D1 D2"},
+   {"name": "req_wmsk", "wave": "x3.4x.|......", "data": "M1 M2"}
+  ],
+  {},
+  ["Response",
+   {"name": "rsp_vld", "wave": "0.....|1.010."},
+   {"name": "rsp_rdy", "wave": "0.....|.1010."},
+   {"name": "rsp_rdat", "wave": "x.....|......"},
+   {"name": "rsp_err", "wave": "0.....|......"}
+  ]
+]
+}

@@ -1,5 +1,0 @@
-.. _mem:
-
-Memory Accessing
-=================
-

@@ -49,6 +49,7 @@ You can build the documents on your local machine using sphinx,
 ```
 cd doc
 pip3 install -r requirements.txt
+make clean
 make html
 ```
 
