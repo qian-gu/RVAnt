@@ -3,7 +3,7 @@
 Instruction Decode Stage
 =========================
 
-``rtl/rvant_id_stage.sv``
+:file:`rtl/core/rvant_id_stage.sv`
 
 .. figure:: ../_static/rvant_id_stage.svg
    :alt:  rvant id stage
@@ -16,15 +16,21 @@ ID stage receives and decodes instructions from previous IF stage, read out oper
 Instruction Decoder
 --------------------
 
+:file:`rtl/core/rvant_decoder.sv`
+
 The decoder takes input instructions and decodes to generate control & data signals for EX stage.
 
 Instruction Issue
 --------------------
 
+:file:`rtl/core/rvant_issue.sv`
+
 The issue module is based on the scoreboard technique, which checks and resolves all hazards for each instruction. All operators is read out from register file at the same time when the instruction is send to EX stage.
 
 Register File
 --------------------
+
+:file:`rtl/core/rvant_rf.sv`
 
 The ``Register File`` can be made up by DFF or latch, the DFF version has better timing and latch version has better area. The flavo is selected via parameter ``REG_FILE`` defined in ``rtl/rvant_pkg.sv``.
 

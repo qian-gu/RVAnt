@@ -3,7 +3,7 @@
 Instruction Fetch Stage
 =======================
 
-``rtl/rvant_if_stage.sv``
+:file:`rtl/core/rvant_if_stage.sv`
 
 .. figure:: ../_static/rvant_if_stage.svg
    :alt:  rvant if stage
@@ -30,16 +30,31 @@ Considering RVAnt is a minimal MCU core for low power application, the core is i
 Branch Predicition
 -------------------
 
-``rtl/rvant_bpu.sv``
+:file:`rtl/core/rvant_bpu.sv`
 
 IF stage includes a mini decoder to detect intruction type and related immediates and source register data. Because there are potential data and structural hazard, so mini decoder may stall the fetching process until resolving all hazards. The mini decoder is an instance of full decoder, but left unused output signals unconnected.
 
-The BPU(Branch Prediction Unit) takes the output of mini_decoder and predicts the next ``PC`` according to current instruction. RVAnt adopts the most basic ``BTFN`` (backward taken, forward not taken) algorithm to simplify hardware design and optimize the area.
+The BPU(Branch Prediction Unit) takes the output of mini_decoder and predicts the next ``PC`` according to current instruction. The control transfer instructions can be divided into 2 types: branch and jump.
+
+Branch
+   For branch instructions, RVAnt adopts the most basic ``BTFN`` (backward taken, forward not taken) algorithm to simplify hardware design and optimize the area.
+
+Jump
+   It's not necessary to predict the direction of ``JAL`` instruction, all we need is predicting the target address by ``PC+imm``.
+
+   For ``JALR`` instruction, the target address is ``[rs1]+imm``, we can do some tricks to accelate the predication:
+   
+   - if rs1 is ``x0``, we can calculate the target address without any stall
+   - if it's a call/return instrcution, we use a 4-depth ``RAS``
+     - we forward rs1(``x1`` or ``x5``) from ``RF`` to BPU to accelate predication
+     - forwarding logic does not occupy any read port of ``RF``
+     - data hazards must be resolved before forwarding, including all instrcution in scoreboard and ``IR``, so there would be bubble in some situation
+   - else, wait for resolving all hazards, read rs1 data from ``RF`` port0
 
 PC generation
 --------------------
 
-``rtl/rvant_pcgen.sv``
+:file:`rtl/core/rvant_pcgen.sv`
 
 The next ``PC`` is generated according to control signals:
 

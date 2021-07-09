@@ -1,7 +1,7 @@
 .. _pipeline-details:
 
 Pipeline Details
-================
+==================
 
 RVAnt is a minimal 32-bit RISC-V core with 3 stage pipeline:
 
@@ -46,3 +46,18 @@ Multi-Cycle instructions
 +------------------+-------------+-------------------------------------------------+
 | Mult/Div         | 1 - N       | See details in :ref:`mult-div`                  |
 +------------------+-------------+-------------------------------------------------+
+
+Micro-Architecture
+====================
+
+The micro-architecture of RVAnt is showed as bellow:
+
+.. figure:: ../_static/rvant_march.svg
+   :alt:  rvant march
+   :align: center
+
+   RVAnt Micro-Architecture
+
+.. todo::
+
+   update diagrams for march and if/id/ex stage.

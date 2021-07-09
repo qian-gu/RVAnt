@@ -41,3 +41,6 @@ The protocal is based on valid-ready handshake, example timing is showed in foll
 .. wavedrom:: ../_static/rmi_write.json
    :caption: RMI Basic Back-to-Back Write Handshake
    :align: center
+
+Bus Interface Unit
+===================

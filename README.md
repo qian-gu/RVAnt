@@ -1,7 +1,6 @@
 English | [简体中文]()
 
-RVAnt :ant:
-============
+# RVAnt :ant:
 
 [![Build Status]()]()
 
@@ -9,21 +8,33 @@ RVAnt is a minimal implementation of RV32I written in SystemVerilog for individu
 
 ## Table of Contents
 
-+ [Features](#features)
-+ [Configuration](#configuration)
-+ [Performance](#performance)
-+ [Directory Description](#directory-description)
-+ [Build and Test](#build-and-test)
+- [RVAnt :ant:](#rvant-ant)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Microarchitecture](#microarchitecture)
+  - [Performance](#performance)
+  - [Directory Description](#directory-description)
+  - [Build and Test](#build-and-test)
+  - [Documents](#documents)
+  - [Versioning](#versioning)
+  - [Style Guide](#style-guide)
+  - [Contributing](#contributing)
 
 ## Features
 
-+ 2-stage pipeline
-+ RV32I, M-mode only
-+ single issue, in-order
+- RV32I[M]_Zicsr_Zifencei
+- M-mode only
+- 3-stage pipeline
+- in-order single issue
+- out-of-order execution
+- writen in SystemVerilog
+- MIT license
 
-## Micro-arch
+## Microarchitecture
 
-The microarchitecture of RVAnt.
+The microarchitecture of RVAnt:
+
+![march](doc/source/_static/rvant_march.svg)
 
 ## Performance
 
@@ -39,14 +50,13 @@ The microarchitecture of RVAnt.
 | `rvant_pcpi_fast_mul` | A version of `picorv32_pcpi_fast_mul` using a single cycle multiplier |
 | `rvant_pcpi_div`      | A PCPI core that implements the `DIV[U]/REM[U]` instructions          |
 
-
 ## Build and Test
 
 ## Documents
 
 You can build the documents on your local machine using sphinx, 
 
-```
+```bash
 cd doc
 pip3 install -r requirements.txt
 make clean
@@ -59,6 +69,10 @@ or read the [online documents]().
 
 Follow the [SemVer](https://semver.org/spec/v2.0.0.html)
 
-## Contribute
+## Style Guide
 
-See [LowRISC verilog coding style guide](https://github.com/lowRISC/style-guides/)
+Check out [LowRISC Style Guide](https://github.com/lowRISC/style-guides/blob/master/VerilogCodingStyle.md).
+
+## Contributing
+
+Follow the [conventional Commits](https://www.conventionalcommits.org).
