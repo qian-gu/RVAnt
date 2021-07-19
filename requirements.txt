@@ -1,0 +1,1 @@
+Commitizen>=2.17.13

@@ -3,6 +3,8 @@ English | [简体中文]()
 # RVAnt :ant:
 
 [![Build Status]()]()
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square)](https://conventionalcommits.org)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?style=flat-square&logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 
 RVAnt is a minimal implementation of RV32I written in SystemVerilog for individual study purpose.
 
