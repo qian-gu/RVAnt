@@ -43,7 +43,7 @@ Jump
    It's not necessary to predict the direction of ``JAL`` instruction, all we need is predicting the target address by ``PC+imm``.
 
    For ``JALR`` instruction, the target address is ``[rs1]+imm``, we can do some tricks to accelate the predication:
-   
+
    - if rs1 is ``x0``, we can calculate the target address without any stall
    - if it's a call/return instrcution, we use a 4-depth ``RAS``
      - we forward rs1(``x1`` or ``x5``) from ``RF`` to BPU to accelate predication

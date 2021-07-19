@@ -2,4 +2,3 @@
 
 Control and Status Register
 ============================
-

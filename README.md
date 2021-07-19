@@ -1,5 +1,3 @@
-English | [简体中文]()
-
 # RVAnt :ant:
 
 [![Build Status]()]()
@@ -18,8 +16,6 @@ RVAnt is a minimal implementation of RV32I written in SystemVerilog for individu
   - [Directory Description](#directory-description)
   - [Build and Test](#build-and-test)
   - [Documents](#documents)
-  - [Versioning](#versioning)
-  - [Style Guide](#style-guide)
   - [Contributing](#contributing)
 
 ## Features
@@ -56,7 +52,7 @@ The microarchitecture of RVAnt:
 
 ## Documents
 
-You can build the documents on your local machine using sphinx, 
+You can build the documents on your local machine using sphinx,
 
 ```bash
 cd doc
@@ -67,14 +63,12 @@ make html
 
 or read the [online documents]().
 
-## Versioning
-
-Follow the [SemVer](https://semver.org/spec/v2.0.0.html)
-
-## Style Guide
-
-Check out [LowRISC Style Guide](https://github.com/lowRISC/style-guides/blob/master/VerilogCodingStyle.md).
-
 ## Contributing
 
-Follow the [conventional Commits](https://www.conventionalcommits.org).
+Check out [LowRISC Style Guide](https://github.com/lowRISC/style-guides/blob/master/VerilogCodingStyle.md). Follow the [conventional Commits](https://www.conventionalcommits.org), it's recommanded to use [commitizen](https://github.com/commitizen-tools/commitizen) with [pre-commit](https://pre-commit.com/) enabled.
+
+```bash
+# install Commitizen
+pip3 install -r requirements.txt
+pre-commit install --hook-type commit-msg
+```
