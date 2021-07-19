@@ -68,7 +68,9 @@ or read the [online documents]().
 Check out [LowRISC Style Guide](https://github.com/lowRISC/style-guides/blob/master/VerilogCodingStyle.md). Follow the [conventional Commits](https://www.conventionalcommits.org), it's recommanded to use [commitizen](https://github.com/commitizen-tools/commitizen) with [pre-commit](https://pre-commit.com/) enabled.
 
 ```bash
-# install Commitizen
+# install Commitizen and pre-commit
 pip3 install -r requirements.txt
+pre-commit install
+# integrete commitizen
 pre-commit install --hook-type commit-msg
 ```
