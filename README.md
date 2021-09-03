@@ -1,8 +1,10 @@
 # RVAnt :ant:
 
-[![Build Status]()]()
+![GitHub](https://img.shields.io/github/license/qian-gu/rvant)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/qian-gu/rvant)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square)](https://conventionalcommits.org)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?style=flat-square&logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 
 RVAnt is a minimal implementation of RV32I written in SystemVerilog for individual study purpose.
 
@@ -71,6 +73,6 @@ Check out [LowRISC Style Guide](https://github.com/lowRISC/style-guides/blob/mas
 # install Commitizen and pre-commit
 pip3 install -r requirements.txt
 pre-commit install
-# integrete commitizen
+# integrate Commitizen
 pre-commit install --hook-type commit-msg
 ```

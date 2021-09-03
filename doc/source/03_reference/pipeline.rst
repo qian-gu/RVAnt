@@ -34,7 +34,7 @@ See :ref:`id-stage` for details.
 Exection, Memory and Writeback
 -----------------------------------
 
-The exection and writeback of all instructions is performed in this stage. Most of instructions' exection is 1 cycle, while some multi-cycle instructions are list as below.
+The exection and writeback of all instructions is performed in this stage. Most of instructions' exection time is 1 cycle, while some multi-cycle instructions are list as below.
 
 Multi-Cycle instructions
 --------------------------

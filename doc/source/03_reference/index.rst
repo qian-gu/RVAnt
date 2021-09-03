@@ -1,7 +1,7 @@
 RVAnt Reference Guide
 ======================
 
-This guide explains the architecture of RVAnt to help users to understand and custom.
+This guide explains the architecture of RVAnt to help users to understand and customize.
 
 .. toctree::
     :maxdepth: 2
