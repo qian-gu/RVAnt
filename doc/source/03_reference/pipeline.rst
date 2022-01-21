@@ -25,7 +25,7 @@ Instruction Decode and Issue
 
 This stage includes 3 functions:
 
-+ Decode fetched instruction
++ decode the fetched instruction
 + resolve all hazards and issue instruction
 + read registers
 
